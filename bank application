@@ -8,16 +8,19 @@ class SBI:
         self.gender = gender
         self.pin    = pin
         self.bal    = bal
+
     def details(self):
         print(f'name     = {self.name}')
         print(f'mobileno = {self.mobno}')
         print(f'aadhar   = {self.aadhar}')
         print(f'pan      = {self.pan}')
         print(f'gender   = {self.gender}')
-        print(f'balance  = {self.bal}')       
+        print(f'balance  = {self.bal}') 
+
     @staticmethod
     def checkpin():
-        return int(input('Enter your 4-digit security pin: '))                   
+        return int(input('Enter your 4-digit security pin: '))  
+
     def withdraw(self):
         if self.checkpin() == self.pin:
             amount = int(input('Enter the amount to withdraw: '))
@@ -32,16 +35,19 @@ class SBI:
         else:
             print('Incorrect PIN')
             print('Try again with correct one..')
+
     def deposite(self):
         amount = int(input('Enter the amount to deposite: '))
         self.bal += amount
         print('Amount was debited succesfully...')
         print(f'Available amount is {self.bal}')
         print('Thank you...')
+
     @classmethod
     def changeROI(cls):
         NROI    = float(input('Enter new ROI: '))
         cls.ROI = NROI
+
     def changepin(self):
         oldpin = input('Enter Your Old pin: ')
         if oldpin == self.pin:
@@ -49,6 +55,7 @@ class SBI:
             print('Your Pin was Changed Successfully')
         else:
             print('Incorrect PIN')
+
 cust1 = SBI('vikram',9876543562,859576963435,'CXvx12345','male',1234,100000)
 cust2 = SBI('adhitya',8765435672,959586966435,'CXvx62395','male',4567,80000)
 cust1.withdraw()
