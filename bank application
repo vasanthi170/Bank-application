@@ -1,4 +1,4 @@
-class SBI:
+class SBI: 
     ROI = 0.07
     def __init__(self,name,mobno,aadhar,pan,gender,pin,bal):
         self.name   = name
