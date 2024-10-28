@@ -9,7 +9,7 @@ class SBI:
         self.pin    = pin
         self.bal    = bal
  
-    def details(self):
+    def details(self): 
         print(f'name     = {self.name}')
         print(f'mobileno = {self.mobno}')
         print(f'aadhar   = {self.aadhar}')
