@@ -60,4 +60,3 @@ cust1 = SBI('vikram',9876543562,859576963435,'CXvx12345','male',1234,100000)
 cust2 = SBI('adhitya',8765435672,959586966435,'CXvx62395','male',4567,80000)
 cust1.withdraw()
 SBI.changepin(cust2)
-
