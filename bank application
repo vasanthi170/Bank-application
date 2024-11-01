@@ -5,7 +5,7 @@ class SBI:
         self.mobno  = mobno
         self.aadhar = aadhar
         self.pan    = pan
-        self.gender = gender
+        self.gender = gender 
         self.pin    = pin
         self.bal    = bal
  
